@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint cypress/**/*.js",
-    "lint:fix": "eslint cypress/**/*/*.js --fix"
+    "lint:fix": "eslint cypress/**/*/*.js --fix",
+    "cy:run": "npx cypress run"
   },
   "keywords": [],
   "author": "",
