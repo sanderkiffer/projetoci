@@ -27,7 +27,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           command: npm run teste1
-  cypress-tests-1:
+  cypress-tests-2:
     needs: eslint
     runs-on: ubuntu-latest
     container: cypress/browsers:node12.18.3-chrome87-ff82
