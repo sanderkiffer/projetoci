@@ -138,10 +138,7 @@ describe('example to-do app', () => {
 
       // Finally, make sure that the clear button no longer exists.
       cy.contains('Clear completed')
-.should('not.exist')
-
-
-          
+        .should('not.exist')
     })
   })
 })

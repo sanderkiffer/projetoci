@@ -67,7 +67,7 @@ describe('example to-do app', () => {
     cy.contains('Pay electric bill')
       .parent()
       .find('input[type=checkbox]')
-.check()  
+      .check()
 
 
     // Now that we've checked the button, we can go ahead and make sure
@@ -139,7 +139,7 @@ describe('example to-do app', () => {
 
       // Finally, make sure that the clear button no longer exists.
       cy.contains('Clear completed').should('not.exist')
-        
+
       cy.contains('Clear completed').should('not.exist')
     })
   })
