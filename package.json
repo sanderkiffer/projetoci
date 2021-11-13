@@ -6,7 +6,9 @@
   "scripts": {
     "lint": "eslint cypress/**/*.js",
     "lint:fix": "eslint cypress/**/*/*.js --fix",
-    "cy:run": "npx cypress run"
+    "cy:run": "npx cypress run",
+    "teste1": "npx cypress run --spec './cypress/integration/teste/*spec.js'",
+    "teste2": "npx cypress run --spec './cypress/integration/testedois/*spec.js'"
   },
   "keywords": [],
   "author": "",
