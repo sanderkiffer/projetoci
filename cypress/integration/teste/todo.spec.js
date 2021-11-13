@@ -54,7 +54,7 @@ describe('example to-do app', () => {
     cy.get('.todo-list li')
       .should('have.length', 3)
       .last()
-      .should('have.text', newItem)  
+      .should('have.text', newItem)
   })
 
   it('can check off an item as completed', () => {
@@ -67,7 +67,8 @@ describe('example to-do app', () => {
     cy.contains('Pay electric bill')
       .parent()
       .find('input[type=checkbox]')
-      .check()
+.check()  
+
 
     // Now that we've checked the button, we can go ahead and make sure
     // that the list element is now marked as completed.
@@ -138,7 +139,7 @@ describe('example to-do app', () => {
 
       // Finally, make sure that the clear button no longer exists.
       cy.contains('Clear completed').should('not.exist')
-      cy.wait(100000)
+        
       cy.contains('Clear completed').should('not.exist')
     })
   })
