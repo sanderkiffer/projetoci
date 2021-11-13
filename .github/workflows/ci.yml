@@ -15,7 +15,19 @@ jobs:
       run: npm install
     - name: Run ESLint
       run: npm run lint
-  cypress-tests-ci:
+  cypress-tests-1:
+    needs: eslint
+    runs-on: ubuntu-latest
+    container: cypress/browsers:node12.18.3-chrome87-ff82
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Run end-to-end tests on ci
+        uses: cypress-io/github-action@v2
+        with:
+          command: npm run cy:run
+    cypress-tests-1:
     needs: eslint
     runs-on: ubuntu-latest
     container: cypress/browsers:node12.18.3-chrome87-ff82
